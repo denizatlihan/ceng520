@@ -1,0 +1,39 @@
+CENG520 Information Security
+2022-2023 Spring Semester
+Homework #1
+9 March 2023
+
+Deadline: 23 March 2023 23:59 (GMT+3)
+
+You are required to submit your homework to WebOnline System.
+Put all your source codes, program outputs, reports (only PDF), etc. in a ZIP file.
+User your student number and ”-ceng520-hw1” suffix as filename.
+e.g. c1234567-ceng520-hw1.zip
+
+1 Create letter frequency table
+• Write a program that creates letter frequency table.
+• Choose an alphabet and a sample text.
+• Example: Start with a sample ”lorem ipsum” text (https://www.lipsum.com/) with English alphabet.
+• Manipulate text to contain only small letters: Convert capital letters to small ones and ignore all
+other characters.
+• The program should take the text as input and return a table that contains the frequencies of each
+letter defined in your chosen alphabet.
+• Choose a long English text (could be a book chapter, news page, etc.).
+• Choose a long Turkish text (optional, for Turkish students only).
+• Compare your results with well known language frequency tables
+(e.g. https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html).
+• Try with different length of texts and observe results.
+ 	
+
+ 
+2 Compute the entropy
+• Use the program you have developed in first question.
+• Write a program that takes the output of the first question (the frequency table of letters) as input
+and return the entropy value.
+• Compute entropy of each text sample you’ve used in the first question.
+• Compress each text and compute entropy of the compressed data (Be careful with the alphabet).
+Compare results with previous computations. (You are free to use any compression algorithm.)
+
+3 TCP/IP Stack Error Detection/Correction
+Write a literature review about the algorithms and methods used for the error detection and/or correction
+in the TCP/IP Stack. Address solutions in each layer.
