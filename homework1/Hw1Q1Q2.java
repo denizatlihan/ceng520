@@ -1,4 +1,4 @@
-package cankaya23.c2171651.ceng520;
+package cankaya_c2171651.ceng520.homework1;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class Hw1 {
+public class Hw1Q1Q2 {
 
 	public static void main(String[] args) throws IOException {
 
@@ -20,13 +20,13 @@ public class Hw1 {
 		// for if using custom input file
 		if (args.length == 1) {
 
-			test(args[0], alphabet);
+			makeExperiment(args[0], alphabet);
 		} else {
 
 			// experimental files
-			test("data/loremipsum5paragraph.txt", alphabet);
-			test("data/ayreonTheoryOfEverythingLyrics.txt", alphabet);
-			test("data/pfWallAll.txt", alphabet);
+			makeExperiment("ceng520/homework1/data/loremipsum5paragraph.txt", alphabet);
+			makeExperiment("ceng520/homework1/data/ayreonTheoryOfEverythingLyrics.txt", alphabet);
+			makeExperiment("ceng520/homework1/data/pfWallAll.txt", alphabet);
 		}
 	}
 
@@ -64,21 +64,20 @@ public class Hw1 {
 		return engFreqTable;
 	}
 
-	private static void test(String filePath, Set<Character> alphabet) throws IOException {
+	private static void makeExperiment(String filePath, Set<Character> alphabet) throws IOException {
 
 		File file = new File(filePath);
 
 		File brotli = new File(filePath.substring(0, filePath.indexOf('.')) + ".brotli");
 
 		Map<Character, Double> freqTable = createFrequencyTable(file, alphabet);
-//		printFreqTable(freqTable);
+		// printFreqTable(freqTable);
 
 		double ent = calculateEngCharsEntropy(freqTable);
 		System.out.println("Entropy is: " + ent);
 
 		double bortliEnt = calculateUniqueEntropy(brotli);
-		System.out.println("Brotly Entropy is: " + ent);
-
+		System.out.println("Brotly Entropy is: " + bortliEnt);
 	}
 
 	private static double calculateUniqueEntropy(File brotli) throws IOException {
@@ -89,24 +88,25 @@ public class Hw1 {
 
 		double ent = 0;
 
-		BufferedReader br = new BufferedReader(new FileReader(brotli));
+		try (BufferedReader br = new BufferedReader(new FileReader(brotli))) {
 
-		char read = (char) br.read();
+			char read = (char) br.read();
 
-		while (read != -1 && read != 65535) {
+			while (read != -1 && read != 65535) {
 
-			if (frequencyMap.containsKey(read)) {
+				if (frequencyMap.containsKey(read)) {
 
-				frequencyMap.put(read, frequencyMap.get(read) + 1);
+					frequencyMap.put(read, frequencyMap.get(read) + 1);
 
-			} else {
+				} else {
 
-				frequencyMap.put(read, 1d);
+					frequencyMap.put(read, 1d);
+				}
+
+				sum++;
+				read = (char) br.read();
+
 			}
-
-			sum++;
-			read = (char) br.read();
-
 		}
 
 		for (Character key : frequencyMap.keySet()) {
@@ -118,6 +118,7 @@ public class Hw1 {
 		return ent;
 	}
 
+	@SuppressWarnings("unused")
 	private static void printFreqTable(Map<Character, Double> frequencyMap) {
 
 		System.out.println("Frequency Results:");

@@ -1,0 +1,9 @@
+Input file(ceng520\homework1\data\loremipsum5paragraph.txt) is parsing...
+Entropy is: 3.9885591873719193
+Brotly Entropy is: 5.983194966877432
+Input file(ceng520\homework1\data\ayreonTheoryOfEverythingLyrics.txt) is parsing...
+Entropy is: 4.17918699379069
+Brotly Entropy is: 5.994213640431144
+Input file(ceng520\homework1\data\pfWallAll.txt) is parsing...
+Entropy is: 4.204534333499936
+Brotly Entropy is: 5.998352552283554
