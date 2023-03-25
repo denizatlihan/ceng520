@@ -71,7 +71,7 @@ public class Hw1Q1Q2 {
 		File brotli = new File(filePath.substring(0, filePath.indexOf('.')) + ".brotli");
 
 		Map<Character, Double> freqTable = createFrequencyTable(file, alphabet);
-		// printFreqTable(freqTable);
+		printFreqTable(freqTable);
 
 		double ent = calculateEngCharsEntropy(freqTable);
 		System.out.println("Entropy is: " + ent);

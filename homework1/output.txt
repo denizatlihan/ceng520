@@ -1,9 +1,54 @@
 Input file(ceng520\homework1\data\loremipsum5paragraph.txt) is parsing...
+Frequency Results:
+a: 0,069        n: 0,063
+b: 0,013        o: 0,046
+c: 0,037        p: 0,025
+d: 0,035        q: 0,015
+e: 0,116        r: 0,065
+f: 0,009        s: 0,082
+g: 0,012        t: 0,085
+h: 0,005        u: 0,099
+i: 0,106        v: 0,014
+j: 0,002        w: 0,000
+k: 0,000        x: 0,002
+l: 0,054        y: 0,000
+m: 0,048        z: 0,000
+n: 0,063
 Entropy is: 3.9885591873719193
 Brotly Entropy is: 5.983194966877432
 Input file(ceng520\homework1\data\ayreonTheoryOfEverythingLyrics.txt) is parsing...
+Frequency Results:
+a: 0,066        n: 0,065
+b: 0,013        o: 0,082
+c: 0,022        p: 0,017
+d: 0,034        q: 0,001
+e: 0,128        r: 0,061
+f: 0,019        s: 0,058
+g: 0,026        t: 0,092
+h: 0,063        u: 0,031
+i: 0,076        v: 0,014
+j: 0,002        w: 0,022
+k: 0,008        x: 0,001
+l: 0,044        y: 0,029
+m: 0,027        z: 0,000
+n: 0,065
 Entropy is: 4.17918699379069
 Brotly Entropy is: 5.994213640431144
 Input file(ceng520\homework1\data\pfWallAll.txt) is parsing...
+Frequency Results:
+a: 0,074        n: 0,070
+b: 0,020        o: 0,099
+c: 0,019        p: 0,012
+d: 0,038        q: 0,000
+e: 0,114        r: 0,055
+f: 0,017        s: 0,048
+g: 0,025        t: 0,083
+h: 0,060        u: 0,039
+i: 0,063        v: 0,008
+j: 0,002        w: 0,028
+k: 0,011        x: 0,001
+l: 0,048        y: 0,037
+m: 0,029        z: 0,001
+n: 0,070
 Entropy is: 4.204534333499936
 Brotly Entropy is: 5.998352552283554
